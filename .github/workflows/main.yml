@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for live-stock
+name: CI/CD Pipeline for swim
 
 on:
   push:
