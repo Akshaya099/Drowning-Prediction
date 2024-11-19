@@ -51,8 +51,8 @@ jobs:
       # Step 4: Build and push Docker image to AWS ECR
       - name: Build and Push Docker image
         run: |
-          docker build -t live-stock .
-          docker tag live-stock:latest 273354646723.dkr.ecr.us-west-1.amazonaws.com/swim:latest
+          docker build -t swim .
+          docker tag swim:latest 273354646723.dkr.ecr.us-west-1.amazonaws.com/swim:latest
           docker push 273354646723.dkr.ecr.us-west-1.amazonaws.com/swim:latest
 
   # Continuous Deployment
